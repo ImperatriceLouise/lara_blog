@@ -83,6 +83,7 @@
 <script src="{{ asset('plugins/moment/moment.min.js')}}"></script>
 <script src="{{ asset('plugins/daterangepicker/daterangepicker.js')}}"></script>
 <script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
+<script src="{{ asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
 <script src="{{ asset('dist/js/adminlte.js')}}"></script>
 <script>
     $(document).ready(function() {
@@ -97,6 +98,9 @@
                 ['height', ['height']]
             ]
         });
+    });
+    $(function () {
+        bsCustomFileInput.init();
     });
 </script>
 </body>
